@@ -139,5 +139,27 @@ function createManager() {
                     },
 
                 ])
+                .then((answer) => {
+                    switch (answer.choice) {
+                        case "Engineer":
+                            createEngineer();
+                            break;
+                        case "Intern":
+                            createIntern();
+                            break;
+                        default:
+                            generateTeamHTML();
+                            break;
+                    }
+                });
 
             }
+
+            // function to create the html file
+            function generateTeamHTML() {
+                const html = render(team);
+                fs.writeFileSync(outputPath, html);
+                console.log("Team profile generated successfully!");
+            }
+            
+            createManager();
