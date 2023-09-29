@@ -103,6 +103,11 @@ function createManager() {
                         message: "Enter the intern's employee ID:", // get intern id
                         name: "id",
                     },
+                    {
+                        type: "input",
+                        message: "Enter the intern's email address:",   // get intern email
+                        name: "email",
+                    },
 
         
                 ])
