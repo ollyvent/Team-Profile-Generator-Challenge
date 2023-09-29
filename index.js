@@ -73,8 +73,18 @@ function createManager() {
                     type: "input",
                     message: "Enter the engineer's GitHub username:",   // get engineer github
                     name: "github",
-                },
-        
+                },        
 
             ])
+
+            .then((answers) => {                                        // after which the repective responses are linked to corresponding fields in employee module
+                const engineer = new Engineer(
+                    answers.name,
+                    answers.id,
+                    answers.email,
+                    answers.github
+                );
+                team.push(engineer);
+                addTeamMember();
+            });
         }
