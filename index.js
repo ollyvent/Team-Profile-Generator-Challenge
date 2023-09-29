@@ -38,7 +38,7 @@ function createManager() {
                 name: "officeNumber",
             },
         ])
-        .then((answers) => {                                    // after which the repective responses are linked to corresponding fields
+        .then((answers) => {                                    // after which the repective responses are linked to corresponding fields in employee module
             const manager = new Manager(
                 answers.name,
                 answers.id,
@@ -49,3 +49,17 @@ function createManager() {
             addTeamMember();
         });
     }
+
+// function to create engineer profile using inquirer
+    function createEngineer() {
+        inquirer
+            .prompt([
+                {
+                    type: "input",
+                    message: "Enter the engineer's name:",      // get engineer name
+                    name: "name",
+                }, 
+        
+
+            ])
+        }
