@@ -62,6 +62,4 @@ If you have any questions or need further assistance, feel free to contact me:
 
 Image: ![Alt text](<Screenshot 2023-09-29 212238.png>)
 
-Deployment:
 
-https://github.com/ollyvent/Team-Profile-Generator-Challenge
