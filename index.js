@@ -64,6 +64,11 @@ function createManager() {
                     message: "Enter the engineer's employee ID:",   // get engineer id
                     name: "id",
                 },
+                {
+                    type: "input",
+                    message: "Enter the engineer's email address:", // get enginner email
+                    name: "email",
+                },
         
 
             ])
