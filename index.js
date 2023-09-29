@@ -95,10 +95,14 @@ function createManager() {
                 .prompt([
                     {
                         type: "input",
-                        message: "Enter the intern's name:",
+                        message: "Enter the intern's name:", // get intern name
                         name: "name",
                     },
-                    
+                    {
+                        type: "input",
+                        message: "Enter the intern's employee ID:", // get intern id
+                        name: "id",
+                    },
 
         
                 ])
