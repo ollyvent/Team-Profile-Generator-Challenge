@@ -88,3 +88,18 @@ function createManager() {
                 addTeamMember();
             });
         }
+
+        // function to collect intern data
+        function createIntern() {
+            inquirer
+                .prompt([
+                    {
+                        type: "input",
+                        message: "Enter the intern's name:",
+                        name: "name",
+                    },
+                    
+
+        
+                ])
+        }
