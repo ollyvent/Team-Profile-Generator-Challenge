@@ -32,5 +32,20 @@ function createManager() {
                 message: "Enter the manager's email address:",  // get manager email
                 name: "email",
             },
+            {
+                type: "input",
+                message: "Enter the manager's office number:",  // get manager office number
+                name: "officeNumber",
+            },
         ])
+        .then((answers) => {                                    // after which the repective responses are linked to corresponding fields
+            const manager = new Manager(
+                answers.name,
+                answers.id,
+                answers.email,
+                answers.officeNumber
+            );
+            team.push(manager);
+            addTeamMember();
+        });
     }
