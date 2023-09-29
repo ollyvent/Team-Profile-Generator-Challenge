@@ -56,9 +56,14 @@ function createManager() {
             .prompt([
                 {
                     type: "input",
-                    message: "Enter the engineer's name:",      // get engineer name
+                    message: "Enter the engineer's name:",          // get engineer name
                     name: "name",
                 }, 
+                {
+                    type: "input",
+                    message: "Enter the engineer's employee ID:",   // get engineer id
+                    name: "id",
+                },
         
 
             ])
