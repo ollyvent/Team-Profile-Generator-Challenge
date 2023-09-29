@@ -69,6 +69,11 @@ function createManager() {
                     message: "Enter the engineer's email address:", // get enginner email
                     name: "email",
                 },
+                {
+                    type: "input",
+                    message: "Enter the engineer's GitHub username:",   // get engineer github
+                    name: "github",
+                },
         
 
             ])
