@@ -114,7 +114,30 @@ function createManager() {
                         name: "school",
                     },
                 ])
-
-        
+                .then((answers) => {                                    // link responses to corresponding fields in employee module
+                    const intern = new Intern(
+                        answers.name,
+                        answers.id,
+                        answers.email,
+                        answers.school
+                    );
+                    team.push(intern);
+                    addTeamMember();
+                });        
                 
         }
+
+        // create function to add team member
+        function addTeamMember() {
+            inquirer
+                .prompt([
+                    {                                                                   // add team member
+                        type: "list",
+                        message: "Choose a team member to add:",
+                        choices: ["Engineer", "Intern", "Finish building the team"],
+                        name: "choice",
+                    },
+
+                ])
+
+            }
