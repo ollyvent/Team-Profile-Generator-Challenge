@@ -54,9 +54,9 @@ Contributions are welcome! Please create a new issue or pull request for any imp
 
 If you have any questions or need further assistance, feel free to contact me:
 
-- GitHub: [YourGitHubUsername](https://github.com/ollyvent)
+- GitHub: [goToRepo](https://github.com/ollyvent/Team-Profile-Generator-Challenge)
 
-- Email: [youremail@placeholder.com](diloch111@gmail.com)
+- Email: [goToEmail](diloch111@gmail.com)
 
 ## 8. <a name='Demo'></a>Demo
 
